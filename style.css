@@ -1,0 +1,123 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0c1023 0%, #764ba2 100%);
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: rgba(81, 47, 47, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(12, 1, 1, 0.2);
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+#courses-container {
+    margin-bottom: 30px;
+}
+
+.course-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.course-row input, .course-row select {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(46, 8, 8, 0.2);
+    color: #f4eeee;
+    font-size: 1em;
+    flex: 1;
+}
+
+.course-row input::placeholder {
+    color: rgba(244, 239, 239, 0.995);
+}
+
+.course-row .course-name {
+    flex: 2;
+}
+
+.remove-course {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #ff4d4d;
+    color: #efe9e9;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.remove-course:hover {
+    background: #e60000;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+#add-course, #calculate-cgpa {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#add-course {
+    background: #0a235e;
+    color: #fff;
+}
+
+#add-course:hover {
+    background: #021857;
+    transform: translateY(-2px);
+}
+
+#calculate-cgpa {
+    background: #28a745;
+    color: #e6e5ec;
+}
+
+#calculate-cgpa:hover {
+    background: #218838;
+    transform: translateY(-2px);
+}
+
+#result-container {
+    background: rgba(40, 6, 6, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#result-container h2 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+#cgpa-result {
+    font-weight: 700;
+    color: #ecf6eb;
+}
